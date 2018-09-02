@@ -1,0 +1,32 @@
+{
+  "name": "realtyschool101",
+  "version": "1.0.0",
+  "description": "Realty School 101",
+  "author": "David Beard",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.6",
+    "nuxt": "^1.0.0",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@storybook/vue": "^3.4.10",
+    "babel-eslint": "^8.2.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0"
+  }
+}
