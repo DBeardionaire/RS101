@@ -1,5 +1,7 @@
 import Vue from 'vue'
+import Element from 'element-ui'
+import locale from 'element-ui/lib/locale/lang/en'
 
-const ElementUI = require('element-ui')
-const locale = require('element-ui/lib/locale/lang/en')
-Vue.use(ElementUI, { locale })
+export default () => {
+  Vue.use(Element, { locale })
+}

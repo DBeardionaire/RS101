@@ -33,7 +33,15 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
-  }
+    },
+    // Vendor
+    // vendor: ['element-ui']
+  },
+  // Add element-ui in our app, see plugins/element-ui.js file
+  plugins: ['@/plugins/element-ui'],
+  //css
+  css: [
+    'element-ui/lib/theme-chalk/index.css'
+  ]
 }
 
