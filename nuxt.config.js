@@ -1,4 +1,5 @@
 module.exports = {
+  analyze: false,
   /*
   ** Headers of the page
   */
@@ -10,7 +11,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Realty School 101' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/rs101-icon.png' }
     ]
   },
   /*
@@ -21,6 +22,19 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    /*
+    ** Babel - TODO: For importing only used components
+    */
+    // babel: {
+    //   'presets': ['vue-app'],
+    //   'plugins': [
+    //     ['component', [{
+    //       'libraryName': 'element-ui',
+    //       'styleLibraryName': 'theme-default'
+    //     }]]
+    //   ],
+    //   'comments': false
+    // },
     /*
     ** Run ESLint on save
     */
@@ -41,6 +55,7 @@ module.exports = {
   plugins: ['@/plugins/element-ui'],
   //css
   css: [
+    'element-ui/lib/theme-chalk/reset.css',
     'element-ui/lib/theme-chalk/index.css'
   ]
 }
